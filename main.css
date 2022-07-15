@@ -1,0 +1,372 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background: url(images/image17.jpg) ;
+    background-size: cover;
+    background-attachment: fixed !important;
+}
+
+a{  
+    font-family: 'Merriweather', serif;
+    color: #ffff;
+    text-decoration: none;
+    word-spacing: 5px;
+}
+
+.logo{
+    font-family: 'Merriweather', serif;
+    color: #ffff;
+    text-decoration: none;
+    margin-top: 50px;
+    font-size: 30px;
+}
+
+.logo a{
+    color: #ffff;
+    transition: all.3s;
+}
+
+.logo a:hover{
+    color: #e0ced3;
+}
+
+nav{
+    background: #0000;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 30px;
+}
+
+ul{
+    display: inline-flex;
+    padding: 0;
+}
+
+ul li{
+    margin-top: 50px;
+    list-style-type: none;
+    padding: 19.5px;
+    transition: 0.5s;
+}
+
+ul li:hover{
+    margin-top: 70px;
+    background:  rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    color: #ffff;
+    transition: 0.5s;
+}
+
+
+.contact{
+    margin-top: 90px;
+    transform: translate(-50%, -50%);
+}
+
+.contact a{
+    display: block;
+    width: 100px;
+    height: 40px;
+    padding-inline-start: 40%;
+    line-height: 40px;
+    font-size: 15px;
+    font-family: 'Merriweather', serif;
+    text-decoration: none;
+    color: #ffff;
+    border: 2px solid #ffff;
+    position: relative;
+    transition: all .35s;
+}
+
+.contact a span{
+    z-index: 99;
+}
+
+.contact a:after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #ffff;
+    transition: all .35s;
+}
+
+.contact a span:hover{
+    color: #1c1c1c;
+}
+
+.contact a:hover:after{
+  width: 100%;
+}
+
+.container{
+    width: min-content;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.line{
+    display: block;
+}
+
+#lv{
+    height: 25vh;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-left: 60px;
+    border-left: 1.5px solid #ffff;
+}
+
+#lv2{
+    height: 25vh;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    margin-left: 60px;
+    border-left: 1.5px solid #ffff;
+}
+
+.container-i{
+    height: 8vh;
+    display: block;
+    margin-left: 47px;
+    margin-top: 30px;
+}
+
+.container-i a:hover{
+    color: rgb(155, 207, 255);
+    transition: all .5s;
+}
+
+.textinit{
+    float: right;
+    margin-top: 25%;
+    margin-right: 21%;
+}
+
+
+.textinit a{
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 60px;
+    transition: all 0.9s;
+    box-shadow: inset 0 0 0 0  rgba(255, 255, 255, 0.3);
+    transition: color 1.9s ease-in-out, box-shadow .5s ease-in-out;
+}
+
+.textinit a:hover{
+    box-shadow: inset 800px 0 0 0  rgba(255, 255, 255, 0.3);
+    color: #ffff;
+}
+
+
+main div{
+    display: inline-block;
+}
+
+section{
+    min-height: 100vh
+}
+
+h1{
+    color: #ffff;
+    font-size: 120px;
+  
+    
+}
+
+
+#modern{
+    background: #0000;
+    margin-top: 90px;
+    margin-left: 10%;
+    width: 80%;
+}
+
+#modern h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.card{
+    display: grid;
+    height: 500px;
+    width: min-content;
+    margin-top: 50px;
+    grid-template-columns: 300px;
+    grid-template-rows: 210px 250px 20px;
+    grid-template-areas: "image" "text";
+
+    border-radius: 18px;
+    background: #1d1d1d;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+    font-family: 'Fira Sans', sans-serif;
+    text-align: justify;
+
+    cursor: pointer;
+    margin: 30px;
+    transition: .5s ease;
+}
+
+.card3{
+    display: grid;
+    height: 500px;
+    width: min-content;
+    margin-top: 50px;
+    float: right;
+    grid-template-columns: 300px;
+    grid-template-rows: 210px 250px 20px;
+    grid-template-areas: "image" "text";
+
+    border-radius: 18px;
+    background: #1d1d1d;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+    font-family: 'Fira Sans', sans-serif;
+    text-align: justify;
+
+    cursor: pointer;
+    margin: 30px;
+    transition: .5s ease;
+}
+
+.mc3{
+    margin-top: 90px;
+}
+
+
+.card-image{
+    grid-area: image;
+}
+
+.card-text{
+    grid-area: text;
+}
+
+.card-image{
+    grid-area: image;
+    background: linear-gradient(#fff0 0%, #fff0 70%, #1d1d1d 100%),url(images/image14.jpg);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: cover;
+}
+
+.card-text{
+    grid-area: text;
+    margin: 25px;
+}
+
+.card-text .date{
+    font-weight: 500;    
+    color: rgb(122, 175, 219);
+    font-size: 15px;
+}
+
+.card-text p{
+    color: grey;
+    font-size: 15px;
+    margin-top: 25px;
+}
+
+.card-text h2{
+    color: #ffff;
+    margin-top: 0px;
+    font-size: 28px;
+}
+
+
+.card-image2{
+    grid-area: image;
+    background: linear-gradient(#fff0 0%, #fff0 70%, #1d1d1d 100%),url(images/image7.jpg);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: cover;
+    
+}
+
+.card-image3{
+    grid-area: image;
+    background: linear-gradient(#fff0 0%, #fff0 70%, #1d1d1d 100%),url(images/image13.jpg);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: cover;
+}
+
+.card:hover{
+    transform: scale(1.15);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+}
+
+.containeer{
+    width: 100%;
+    margin-top: 110px;
+    display: flex;
+    justify-content: center;
+}
+
+ #us{
+    margin-top: 60px;
+    width: 100%;
+    min-height: 100vh;
+
+    background: -moz-linear-gradient(top, rgba(255,255,255,0)) 0%, rgb(31, 29, 29) 100% ;
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgb(31, 29, 29)100%);
+    background: linear-gradient(to bottom, rgba(255,255,255,0)0%, rgb(31, 29, 29)100%);
+}
+#us h1{
+    color: #ffff;
+    display: flex;
+    justify-content: center;
+}
+
+#us p{
+    font-family: system-ui;
+    margin-left: 20%;
+    margin-top: 200px;
+    font-size: 50px;
+    line-height: 15px;
+    color: #ffff;
+    transition: all 1.5s;
+    font-weight: bold;
+}
+
+#us p:hover{
+    line-height: 65px;
+}
+
+#us .t2{
+    font-family: system-ui;
+    float: right;
+    margin-top: 170px;
+    margin-right: 20%;
+    font-size: 50px;
+    line-height: 15px;
+    color: #ffff;
+    transition: all 1.5s;
+    font-weight: bold;
+}
+
+footer{
+    background: #1d1d1d;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 200px;
+}
+
+footer .f a{
+    font-size: 30px;
+}
+
+footer .ico a{
+    margin-left: 20px;
+}
